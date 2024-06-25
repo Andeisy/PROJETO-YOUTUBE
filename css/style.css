@@ -52,8 +52,7 @@ p {
 .questionario {
     display: flex;
     flex-direction: column;
-    width: 400px;
-    padding: 16px 0px;
+    padding: 14px 20px;
     gap: 25px;
 }
 
@@ -72,6 +71,7 @@ p {
     border-radius: 5px;
     height: 35px;
     padding: 10px;
+    background: none;
 }
 
 .questionario .votos {
