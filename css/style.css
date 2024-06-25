@@ -1,0 +1,28 @@
+
+:root{
+    --fonte-principal:  'Roboto', sans-serif;
+
+}
+
+h2{
+    font-family: var(--fonte-principal);
+}
+p{
+    font-family: var(--fonte-principal);
+    color: #909090;
+}
+
+.barra_superior {
+    padding: 5px;
+}
+
+.barra {
+    display: flex;
+}
+
+.videos{
+    padding-bottom: 15px;
+}
+
+
+
