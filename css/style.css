@@ -13,167 +13,57 @@ p {
     color: #909090;
 }
 
-
 .header {
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
-.icones img {
-    padding: 2vh;
-    width: 24px;
-    height: 24px;
-    
-
-}
-
-.barra{
-    overflow-x: auto;
-}
-
-.barra::-webkit-scrollbar{
-    width: 0;
-   
-}
-
-.barra img{
-    padding-right: 2vh;
-}
-.destaques {
-    padding-bottom: 10px;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--fonte-principal);
-   
-}
-
-.destaques li:hover{
-    opacity: 0.5;
-}
-
-
-.black {
-    background-color: black;
-    color: white;
-    width: Hug (40px)px;
-    height: Hug (32px)px;
-    padding: 8px 12px 8px 12px;
-    gap: 8px;
-    border-radius: 8px;
-    opacity: 0px;
-
-}
-
-.padrao{
-    background-color: #F2F2F2;
-    color: black;
-    width: Hug (40px)px;
-    height: Hug (32px)px;
-    padding: 8px 12px 8px 12px;
-    border-radius: 8px;
-}
-
-li {
-    list-style-type: none;
-}
-
-.barra_superior {
-    padding: 5px;
-}
-
-.barra {
-    display: flex;
-
-}
-
-.videos {
-    padding-bottom: 15px; 
-}
-:root {
-    --fonte-principal: 'Roboto', sans-serif;
-    --color-dark: #0F0F0F;
-    --color-darkGrey: #606060;
-}
-
-h2 {
-    font-family: var(--fonte-principal);
-}
-
-p {
-    font-family: var(--fonte-principal);
-    color: #909090;
-}
-
-
-.header {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
 }
 
-.logo{
-
+.logo {
     margin-left: 15px;
-
 }
 
-.icones{
-
+.icones {
     display: flex;
-    
 }
 
 .icones img {
     padding: 1rem;
     width: 24px;
     height: 24px;
-
 }
 
 
-.barra{
+.barra {
     overflow-x: auto;
     display: flex;
+    align-items: center;
     gap: 10px;
-    margin-left: 10px;
+    margin-left: 2rem;
 }
 
-.barra::-webkit-scrollbar{
+.barra::-webkit-scrollbar {
     width: 0;
-   
 }
 
-.barra img{
-    width: 24px;
-    height: 24px;
-}
-
-.bussola img{
-    width: 35px;
-    height: 35px;
+.bussola {
+    width: 25px;
+    height: 25px;
 }
 
 .destaques {
-    padding-bottom: 10px;
     display: flex;
     gap: 15px;
     align-items: center;
     justify-content: center;
+    padding-right: 1rem;
     font-family: var(--fonte-principal);
-   
 }
 
-.destaques li:hover{
+.destaques li:hover {
     opacity: 0.5;
 }
-
 
 .black {
     background-color: black;
@@ -184,10 +74,9 @@ p {
     gap: 8px;
     border-radius: 8px;
     opacity: 0px;
-
 }
 
-.padrao{
+.padrao {
     background-color: #F2F2F2;
     color: black;
     width: Hug (40px)px;
@@ -198,6 +87,9 @@ p {
 
 li {
     list-style-type: none;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 16.4px;
 }
 
 .barra_superior {
@@ -206,53 +98,76 @@ li {
 
 .barra {
     display: flex;
-
 }
 
 .videos {
-    padding-bottom: 15px; 
+    padding-bottom: 15px;
 }
-.videos .capa_video{
+
+.videos,
+.capa_video {
     width: 100%;
 }
-.info-video {
-    display: flex; 
-    align-items: center; 
-    padding: 8px 8px;
+
+.video-container {
+    display: flex;
+    gap: .8rem;
+    padding: 8px 15px;
 }
 
-.info-video img {
-    width: 36px; 
+.video-container img {
+    width: 36px;
     height: 36px;
-    margin-right: 10px; 
 }
 
-.shorts_youtube{
-    padding: 1vh;
+.video-titulo {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 18.75px;
 }
-.shorts{
+
+.video-visualizacoes {
+    font-size: .8rem;
+    font-weight: 400;
+    line-height: 14.06px;
+}
+
+.video-info {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.shorts_youtube {
+    padding-left: 1rem;
+}
+
+.shorts {
     width: 100%;
     overflow-x: scroll;
     white-space: nowrap;
 
 }
-.shorts::-webkit-scrollbar{
+
+.shorts::-webkit-scrollbar {
     width: 0;
-   
+
 }
 
-.scroll{
-    display: flex ;
+.scroll {
+    display: flex;
     gap: 8px;
     padding: 16px 0px;
 }
 
-.scroll-videos{
+.scroll-videos {
     display: inline-block;
 }
-.scroll-videos img{
+
+.scroll-videos img {
     border-radius: 10px;
 }
+
 .barra-inferior {
     display: flex;
     justify-content: space-around;
@@ -284,10 +199,9 @@ li {
     gap: 10px;
 }
 
-button:hover{
+button:hover {
     opacity: 0.5;
 }
-
 
 .questionario .titulo {
     font-size: 16px;
@@ -317,12 +231,14 @@ button:hover{
     align-items: center;
     gap: 13px;
 }
-.acoes div{
+
+.acoes div {
     display: flex;
     align-items: center;
     margin-right: 155px;
 }
-.acoes button{
+
+.acoes button {
     border: none;
 }
 

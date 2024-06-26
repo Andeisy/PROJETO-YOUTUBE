@@ -14,7 +14,6 @@
     <!--links-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="script.js">
-
 </head>
 
 <body>
@@ -28,13 +27,10 @@
             <img src="img/lupa.png">
             <img src="img/perfil.png">
         </div>
-
     </header>
     <div class="barra">
-        <div class="icones"> 
-            <img src="img/bussola.png">
-        </div>
-        <ul class="destaques" >
+        <img class="bussola" src="img/bussola.png">
+        <ul class="destaques">
             <li class="black">Tudo</li>
             <li class="padrao">Novo</li>
             <li class="padrao">Design</li>
@@ -43,34 +39,37 @@
             <li class="padrao">Musica</li>
             <li class="padrao">Jogos</li>
         </ul>
-
     </div>
     <main>
         <div class="videos">
             <img class="capa_video" src="img/astronauta.png" alt="astronautas em marte">
-            <div class="info-video">
+            <div class="video-container">
                 <img src="img/nasa.png" alt="capa do canal" class="icone">
-                <h2>NOTICIA!! NASA descobre Aliens vivendo em Marte</h2>
-                <p>NASA - 999k Views - Agora</p>
+                <div class="video-info">
+                    <h2 class="video-titulo">NOTICIA!! NASA descobre Aliens vivendo em Marte</h2>
+                    <p class="video-visualizacoes">NASA - 999k Views - Agora</p>
+                </div>
             </div>
         </div>
         <div class="videos">
-            <img  class="capa_video"src="img/vulcao.png" alt="Vulcao">
-            <div class="info-video">
+            <img class="capa_video" src="img/vulcao.png" alt="Vulcao">
+            <div class="video-container">
                 <img src="img/icone_vulcao.png" alt="capa do canal" class="icone">
-                <h2>Vulcão explode</h2>
-                <p>BoomChanel - 85k Views - 20hrs atrás</p>
+                <div class="video-info">
+                    <h2 class="video-titulo">Vulcão explode</h2>
+                    <p class="video-visualizacoes">BoomChanel - 85k Views - 20hrs atrás</p>
+                </div>
             </div>
-
         </div>
         <div class="videos">
             <img class="capa_video" src="img/van.png" alt="Van atravessando o deserto">
-            <div class="info-video">
+            <div class="video-container">
                 <img src="img/icone1.png" alt="capa do canal" class="icone">
-                <h2>1 ano viajando com minha van pela EUROPA!</h2>
-                <p>Bas - 1k Views - 3 meses atrás</p>
+                <div class="video-info">
+                    <h2 class="video-titulo">1 ano viajando com minha van pela EUROPA!</h2>
+                    <p class="video-visualizacoes">Bas - 1k Views - 3 meses atrás</p>
+                </div>
             </div>
-
         </div>
         <div class="shorts_youtube">
             <img src="img/shorts.png" alt="Icone shorts">
@@ -87,46 +86,53 @@
         <div class="conteiner">
             <div class="videos">
                 <img class="capa_video" src="img/astronauta.png" alt="astronautas em marte">
-                <div class="info-video">
+                <div class="video-container">
                     <img src="img/nasa.png" alt="capa do canal" class="icone">
-                    <h2>NOTICIA!! NASA descobre Aliens vivendo em Marte</h2>
-                    <p>NASA - 999k Views - Agora</p>
+                    <div class="video-info">
+                        <h2 class="video-titulo">NOTICIA!! NASA descobre Aliens vivendo em Marte</h2>
+                        <p class="video-visualizacoes">NASA - 999k Views - Agora</p>
+                    </div>
                 </div>
             </div>
             <div class="videos">
                 <img class="capa_video" src="img/vulcao.png" alt="Vulcao">
-                <div class="info-video">
+                <div class="video-container">
                     <img src="img/icone_vulcao.png" alt="capa do canal" class="icone">
-                    <h2>Vulcão explode</h2>
-                    <p>BoomChanel - 85k Views - 20hrs atrás</p>
-                </div>
-    
-                <div class="videos">
-                    <img  class="capa_video" src="img/van.png" alt="Van atravessando o deserto">
-                    <div class="info-video">
-                        <img src="img/icone1.png" alt="capa do canal" class="icone">
-                        <h2>1 ano viajando com minha van pela EUROPA!</h2>
-                        <p>Bas - 1k Views - 3 meses atrás</p>
+                    <div class="video-info">
+                        <h2 class="video-titulo">Vulcão explode</h2>
+                        <p class="video-visualizacoes">BoomChanel - 85k Views - 20hrs atrás</p>
                     </div>
+                </div>
+            </div>
+            <div class="videos">
+                <img class="capa_video" src="img/van.png" alt="Van atravessando o deserto">
+                <div class="video-container">
+                    <img src="img/icone1.png" alt="capa do canal" class="icone">
+                    <div class="video-info">
+                        <h2 class="video-titulo">1 ano viajando com minha van pela EUROPA!</h2>
+                        <p class="video-visualizacoes">Bas - 1k Views - 3 meses atrás</p>
+                    </div>
+                </div>
+            </div>
             <div class="shorts_youtube">
                 <img src="img/shorts.png" alt="Icone shorts">
-                <h2 >Shorts</h2>
+                <h2>Shorts</h2>
                 <div class="shorts">
                     <div class="scroll">
-                        <div class="scroll-videos"><img src="img/soldado_asiatico.png" alt="Soldado Asiatico"></div>
-                        <div class="scroll-videos"><img src="img/Short.png" alt="Cidade dentro de uma garrafa"></div>
+                        <div class="scroll-videos"><img src="img/soldado_asiatico.png" alt="Soldado Asiatico">
+                        </div>
+                        <div class="scroll-videos"><img src="img/Short.png" alt="Cidade dentro de uma garrafa">
+                        </div>
                         <div class="scroll-videos"><img src="img/igreja.png" alt="Igreja na europa"></div>
                         <div class="scroll-videos"><img src="img/abelha.png" alt="Abelha em desenho"></div>
                     </div>
                 </div>
             </div>
-
             <section class="questionario">
                 <p class="titulo">Questionario</p>
                 <button>Sim</button>
                 <button>Não</button>
                 <p class="votos">1.7k votos</p>
-
                 <div class="acoes">
                     <div>
                         <button>
@@ -142,18 +148,15 @@
                     </button>
                     <span>464</span>
                 </div>
-
                 <div class="comentarios">
                     <p>Comentarios <span>464</span></p>
                     <img src="img/Arrows.png" alt="seta de rolagem">
                 </div>
-
                 <div class="comentario">
                     <img src="img/icone1.png" alt="avatar do perfil">
                     <input type="text" placeholder="Adicionar comentarios...">
                 </div>
             </section>
-
         </div>
         <nav class="barra-inferior">
             <div class="barra-item">
