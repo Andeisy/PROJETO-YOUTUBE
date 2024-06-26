@@ -230,6 +230,8 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 13px;
+    font-family: var(--fonte-principal);
+    font-size: .8rem;
 }
 
 .acoes div {
