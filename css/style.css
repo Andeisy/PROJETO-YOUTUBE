@@ -12,12 +12,52 @@ p {
     color: #909090;
 }
 
+.header {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.icones img {
+
+    width: 24px;
+    height: 24px;
+    
+
+}
+
+.destaques {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.black {
+    background-color: black;
+    color: white;
+    width: Hug (40px)px;
+    height: Hug (32px)px;
+    padding: 8px 12px 8px 12px;
+    gap: 8px;
+    border-radius: 8px;
+    opacity: 0px;
+
+}
+
+li {
+    list-style-type: none;
+}
+
 .barra_superior {
     padding: 5px;
 }
 
 .barra {
     display: flex;
+
 }
 
 .videos {
