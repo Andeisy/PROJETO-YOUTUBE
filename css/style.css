@@ -218,6 +218,7 @@ button:hover {
     height: 35px;
     padding: 10px;
     background: none;
+    cursor: pointer;
 }
 
 .questionario .votos {
@@ -242,11 +243,17 @@ button:hover {
 
 .acoes button {
     border: none;
+    cursor: pointer;
+    background: none
 }
 
 .comentarios {
     display: flex;
     justify-content: space-between;
+}
+
+.comentarios img {
+    color: var(--color-dark);
 }
 
 .comentarios p {
@@ -268,6 +275,12 @@ button:hover {
 
 .comentario img {
     height: 24px;
+    transition: filter 0.8s;
+    cursor: pointer;
+}
+
+.comentario img:hover {
+    filter: brightness(1.5);
 }
 
 .comentario input {
