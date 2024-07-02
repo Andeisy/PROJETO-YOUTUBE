@@ -4,9 +4,21 @@
     --color-darkGrey: #606060;
 }
 
+
 h2 {
     font-family: var(--fonte-principal);
-    
+}
+
+a {
+    text-decoration: none;
+    /* Remove o sublinhado */
+    color: black;
+    /* Define a cor inicial do link */
+}
+
+a:visited {
+    color: black;
+    cursor: pointer;
 }
 
 p {
@@ -19,6 +31,7 @@ p {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+
 }
 
 .logo {
@@ -110,6 +123,11 @@ li {
     width: 100%;
 }
 
+.icone{
+    width: 36px;
+    height: 36px;
+}
+
 .video-container {
     display: flex;
     gap: .8rem;
@@ -120,6 +138,18 @@ li {
     width: 36px;
     height: 36px;
 }
+
+.video-container .botao_mais {
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.video-container .botao_mais img {
+    height: 16px;
+}
+
 
 .video-titulo {
     font-size: 1rem;
@@ -139,6 +169,13 @@ li {
     gap: .3rem;
 }
 
+.video-shorts {
+    max-width: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: .3rem;
+}
+
 .shorts_youtube {
     padding-left: 1rem;
 }
@@ -147,7 +184,6 @@ li {
     width: 100%;
     overflow-x: scroll;
     white-space: nowrap;
-
 }
 
 .shorts::-webkit-scrollbar {
@@ -229,23 +265,35 @@ button:hover {
 }
 
 .acoes {
+    width: 100%;
     display: flex;
-    align-items: center;
-    gap: 13px;
+    justify-content: space-between;
     font-family: var(--fonte-principal);
     font-size: .8rem;
 }
 
-.acoes div {
-    display: flex;
-    align-items: center;
-    margin-right: 155px;
-}
-
 .acoes button {
     border: none;
+    padding: 0;
     cursor: pointer;
-    background: none
+    background: none;
+}
+
+.interacoes {
+    display: flex;
+    gap: 1rem;
+}
+
+.curtidas {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.balao-comentarios {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
 }
 
 .comentarios {
@@ -270,7 +318,6 @@ button:hover {
     justify-content: center;
     align-items: center;
     gap: 8px;
-
     padding-top: 8px;
 }
 
@@ -286,6 +333,14 @@ button:hover {
 
 .comentario input {
     width: 336px;
+    height: 24px;
+    padding: 8px 132px 8px 11px;
+    border-radius: 10px;
+    border: none;
+    background: #F2F2F2;
+}
+
+.questionario .novo_comentario {
     height: 24px;
     padding: 8px 132px 8px 11px;
     border-radius: 10px;
